@@ -21,7 +21,7 @@ fun main() = with(System.`in`.bufferedReader()) {
 
 
 // 소수판별 로직
-fun isPrime(num: Int): Boolean {
+private fun isPrime(num: Int): Boolean {
     if (num < 2) return false
     for (i in 2..sqrt(num.toDouble()).toInt()) {
         if (num % i == 0) return false
